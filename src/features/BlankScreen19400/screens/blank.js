@@ -23,9 +23,9 @@ export class _Blank extends React.Component {
   }
 
   state = {
-    Input_3: "",
-    Input_4: "",
-    Input_6: "",
+    Input_3: "6565656",
+    Input_4: "hghjgjhg",
+    Input_6: "grytryry",
     Toggle_7: true,
     Toggle_2: true,
     CheckBox_3: true,
@@ -98,7 +98,8 @@ export class _Blank extends React.Component {
           borderRadius: 0,
           textShadow: "0pt 0pt 0pt #000000",
           textDecoration: "none",
-          textTransform: "none"
+          textTransform: "none",
+          textDecorationLine: "line-through"
         }}
         onPress={() => alert("Pressed!")}
       >
@@ -174,7 +175,8 @@ export class _Blank extends React.Component {
           borderRadius: 0,
           textShadow: "0pt 0pt 0pt #000000",
           textDecoration: "none",
-          textTransform: "none"
+          textTransform: "lowercase",
+          textDecorationLine: "line-through"
         }}
         value={this.state.Input_4}
         onChangeText={nextValue => this.setState({ Input_4: nextValue })}
